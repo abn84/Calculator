@@ -1,1 +1,5 @@
-streamlit
+streamlitstreamlit
+pandas
+numpy
+xbbg
+st-aggrid
