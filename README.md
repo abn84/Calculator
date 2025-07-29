@@ -1,19 +1,31 @@
-# 🎈 Blank app template
+# 📈 DV01 Calculator – Fixed Income Futures
 
-A simple Streamlit app template for you to modify!
+A professional-grade **DV01 calculator** for fixed income futures, built using [Streamlit](https://streamlit.io/) and [xbbg](https://github.com/matthewgilbert/xbbg), designed for pre-trade analytics and cross-market comparison.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+---
 
-### How to run it on your own machine
+## 🧠 Features
 
-1. Install the requirements
+- **Bloomberg-integrated**: Fetches live and cached data via `xbbg`
+- **Dual-leg support**: Compare risk across two futures contracts
+- **Currency normalization**: Converts DV01 into any target currency
+- **Lot-based or DV01-based entry**: Toggle risk input method
+- **Cross-product matrix**: Instant DV01 comparisons across futures
+- **Copy to clipboard**: One-click export of summary/matrix
+- **Responsive UI**: Compact layout with Marex branding
+- **Easter egg**: A hidden deckchair graphic when risk = beach mode 🏖️
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+---
 
-2. Run the app
+## 🚀 Running the App
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+### Requirements
+
+Python 3.9+ and the following packages (see [`requirements.txt`](./requirements.txt)):
+
+```bash
+streamlit
+pandas
+numpy
+xbbg
+st-aggrid
